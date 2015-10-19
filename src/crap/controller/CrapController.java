@@ -28,7 +28,12 @@ public class CrapController
 			age = -12412125;
 		}
 		
-		myPopups.displayResponse("Your dad is " + age + " years old!? Wow your dad is an old geazer!!");
+		if(age >30)
+		{
+			myPopups.displayResponse("Your dad is " + age + "? Wow he is old!");
+		}
+			
+		myPopups.displayResponse("Your dad is " + age + " years old!");
 		
 		double weight;
 		String tempWeight = myPopups.getAnswer("Type in your weight because I just need to know for some reason!");
@@ -39,6 +44,11 @@ public class CrapController
 		else
 		{
 			weight = -234158653;
+		}
+		
+		if(weight >300)
+		{
+			myPopups.displayResponse("You typed in " + weight + "! You should probibly go to the gym more often...");
 		}
 		
 		myPopups.displayResponse("You typed in " + weight + " you fatso!");
